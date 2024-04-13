@@ -1,0 +1,94 @@
+.profile_screen{
+    position: relative; 
+    height: 100vh;
+}
+
+.profile_nav{
+    position: fixed;
+}
+.netflix_logo{
+    position: fixed;
+    left: 0px;
+    top: 10px;
+    width: 100px;
+    object-fit: contain;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.sign_out{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 0.3vw;
+}
+.sign_out:hover{
+    background-color: #f40612;
+}
+
+.prfileScreen_body{
+    position: absolute;
+    padding: 20px;
+    top: 25%;
+    width: 50%;
+    min-width: 85%;
+
+    z-index: 1;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.profileScreen_description{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.avatar_logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatars{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+/* .avatar_users{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+} */
+.avatar_logo p{
+    margin: 0;
+    color: gray;
+}
+
+.avatar_logo > p:hover{
+    color: #fff;
+}
+
+@media  (max-width: 600px) {
+    .avatar_logos{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+}

@@ -1,0 +1,151 @@
+.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url(../images/netflixSignInBg.jpeg) center no-repeat;
+    background-size: cover;
+
+}
+
+.loginScreen_logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    padding-left: 20px;
+    object-fit: contain;
+}
+
+.loginScreen_button{
+    position: fixed;
+    right: 30px;
+    top: 27px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.3vw;
+    padding: 7px 16px;
+    transition: all 0.2s;
+}
+.loginScreen_button:hover{
+    background-color:  #c50000;
+}
+
+.loginScreen_body{
+    position: absolute;
+    padding: 20px;
+    top: 30%;
+    z-index: 1;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.loginScreen_body > h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+.loginScreen_body > h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.loginScreen_body > h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.loginScreen_input{
+    margin: 20px;
+}
+
+.loginScreen_input > form > input{
+    outline-width: 0;
+    border: none;
+    height: 30px;
+    width: 30%;
+    max-width: 600px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 0.2vw;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: #fff;
+    border: 1px solid #e50914;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+.loginScreen_input > form > input:focus{
+    border: 1px solid #fff;
+}
+
+.loginScreen_getStarted{
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #e50914;
+    padding: 15.7px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.2vw;
+    transition: all 0.2s;
+}
+.getStarted_spChar{
+    font-size: 17px;
+}
+.loginScreen_getStarted:hover{
+    background-color:  #c50000;
+}
+
+.loginScreen_gradient{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8) 100% 
+    );
+}
+
+@media (max-width: 600px) {
+    .loginScreen_body > h1 {
+        font-size: 2.5rem;
+    }
+
+    .loginScreen_body > h2 {
+        font-size: 1.5rem;
+    }
+
+    .loginScreen_body > h3 {
+        font-size: 1rem;
+    }
+
+    .loginScreen_input > form > input {
+        width: 80%;
+    }
+    
+    .loginScreen_getStarted {
+        margin-top: 15px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .loginScreen_logo{
+        width: 100px;
+    }
+
+    .loginScreen_button{
+        right: 10px;
+        top: 10px;
+    }
+
+    
+}
